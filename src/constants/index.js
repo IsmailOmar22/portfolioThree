@@ -140,8 +140,9 @@ export const myProjects = [
         ],
     },
     {
-        title: 'PitchAI - AI-powered Football Match Analysis',
-        desc: 'An advanced football analysis system designed to evaluate match performance in real time. It tracks player movements, analyses game strategies, and provides insights, helping coaches and analysts make informed decisions.',
+        title: 'PitchAI - AI-powered Football Analysis',
+        desc:
+            'An advanced football analysis system that evaluates match performance in real time, tracking player movements, analysing strategies, and providing insights to help coaches and analysts make informed decisions.',
         subdesc:
             'With a focus on accuracy, this system integrates player tracking, game analysis, and performance evaluation, powered by Python, YOLO, and OpenCV, to enhance team strategies and optimize match outcomes.',
         href: '',
