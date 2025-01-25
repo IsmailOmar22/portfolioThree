@@ -6,7 +6,7 @@ const Reviews = () => {
             <h3 className="head-text">What Others Say</h3>
 
             <div className="client-container">
-                {clientReviews.map(({id,name,review,img,position}) => (
+                {clientReviews.map(({id,name,review,img,position,linkedIn}) => (
                     <div key={id} className="client-review">
                         <div>
                             <p className="text-white font-white">
@@ -17,9 +17,11 @@ const Reviews = () => {
                                 <div className="flex gap-3">
                                     <img src={img} alt={name} className="w-12 h-12 rounded-full"/>
                                     <div className="flex flex-col">
-                                        <p className="font-semibold text-white-800">
-                                            {name}
-                                        </p>
+                                        <a href={linkedIn}>
+                                            <p className="font-semibold text-white-800 hover:underline">
+                                                {name}
+                                            </p>
+                                        </a>
                                         <p className="text-white-500 md:text-base text-sm">
                                             {position}
                                         </p>
@@ -41,3 +43,11 @@ const Reviews = () => {
     )
 }
 export default Reviews
+
+
+
+
+
+
+
+
